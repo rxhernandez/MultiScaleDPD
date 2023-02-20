@@ -1,0 +1,24 @@
+read_restart equilibration.state
+
+include pair.settings
+kspace_style pppm 1.0e-4
+velocity all create 1.0 45890 dist gaussian
+comm_modify vel yes
+include group.settings
+neigh_modify delay 0 check yes
+
+thermo 1000
+thermo_modify lost warn flush yes
+thermo_style custom step ke epair etotal temp press
+
+timestep 0.002
+run_style verlet
+fix 1 all nve
+fix 0 protein recenter INIT INIT INIT units box
+
+dump 1 protein dcd 1000 protein.dcd
+run 50000
+unfix 1
+unfix 0
+
+write_restart production.state

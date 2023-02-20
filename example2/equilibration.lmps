@@ -1,0 +1,35 @@
+units lj
+atom_style full
+boundary p p p
+
+pair_style hybrid/overlay dpd 1.0 1.0 45890 coul/slater/long 1.185307217552 2.0
+bond_style harmonic
+angle_style cosine/squared
+dihedral_style charmm
+improper_style harmonic
+kspace_style pppm 1.0e-4
+
+read_data protein.data
+include pair.settings
+velocity all create 1.0 45890 dist gaussian
+comm_modify vel yes
+
+include group.settings
+neigh_modify delay 0 check yes
+
+thermo 1000
+thermo_modify lost warn flush yes
+thermo_style custom step ke epair etotal temp press
+
+timestep 0.002
+fix 1 all nvt temp 1.0 1.0 0.1
+fix 2 protein rigid/nvt single temp 1.0 1.0 0.1 reinit no
+fix 0 protein recenter INIT INIT INIT units box
+run 5000
+unfix 2
+unfix 1
+unfix 0
+
+reset_timestep 0
+
+write_restart equilibration.state
