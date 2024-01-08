@@ -106,31 +106,13 @@ class Types:
             else:
                 return 4.5
         def Rc(self, other):
-            if self.virtual or other.virtual:
-                return 0
             if (self.size == 3 and other.size == 3):
                 return (3/4)**(1/3)
-            #elif (self.size != other.size):
-            #    return (max(self.size, other.size)/4)**(1/3)
-            #elif (self.size == 3 and other.size != 3) or (self.size != 3 and other.size == 3):
-            #    return 1
-            else:
-                _size1 = 4 if self.size == 3 else self.size
-                _size2 = 4 if other.size == 3 else other.size
-            return ((_size1/4)**(1/3) + (_size2/4)**(1/3)) / 2
-            return ((other.size/16/np.pi)**(1/3) + (self.size/16/np.pi)**(1/3)) / ((4/16/np.pi)**(1/3) + (4/16/np.pi)**(1/3))
-            #elif (other.size >= 4) or (self.size >= 4):
-            #    return ((other.size/16/np.pi)**(1/3) + (self.size/16/np.pi)**(1/3))
-            #else:
-            #    return 1
-            if self.size == 3 and other.size == 3:
-                return 0.908560296416
-            elif (self.size == 3 and other.size == 4) or (self.size == 4 and other.size == 3):
-                return (1 + 0.908560296416) / 2
-            elif (other.size >= 5) or (self.size >= 5):
-                return ((other.size/16/np.pi)**(1/3) + (self.size/16/np.pi)**(1/3)) / 0.860254013828
-            else:
-                return 1
+            elif (self.size == 3) or (other.size == 3):
+                    _size1 = 4 if self.size == 3 else self.size
+                    _size2 = 4 if other.size == 3 else other.size
+                    return ((_size1/4)**(1/3) + (_size2/4)**(1/3)) / 2
+            return ((self.size / 4)**(1/3) + (other.size / 4)**(1/3)) / 2
 
     class Bond_Type(namedtuple("Bond_Type", ["K", "r", "ID"])):
         def __str__(self):
