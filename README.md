@@ -1,5 +1,9 @@
 # MultiScaleDPD
 
+This is the source code for paper "Construction of Multiscale Dissipative Particle Dynamics (DPD) Models from Other Coarse-Grained Models"
+Please cite:
+##pending: add citation
+
 Process of building a DPD protein to run in LAMMPS:
 1. build a MARTINI model of your protein using 
 CHARMM-gui(https://www.charmm-gui.org/?doc=input/martini.solution) with martini22 force field. You need two files from the result, charmm-gui-xxxxxxxxx/gromacs/step3_charmm2gmx.pdb is the structure file, and charmm-gui-xxxxxxxxx/gromacs/PROA_P.itp is the MARTINI force field file.
