@@ -1,6 +1,7 @@
 # MultiScaleDPD
 
-This is the source code for paper "Construction of Multiscale Dissipative Particle Dynamics (DPD) Models from Other Coarse-Grained Models"
+This is the source code for paper "Construction of Multiscale Dissipative Particle Dynamics (DPD) Models from Other Coarse-Grained Models".
+
 Please cite:
 ##pending: add citation
 
