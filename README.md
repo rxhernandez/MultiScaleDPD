@@ -49,4 +49,4 @@ under Grant No. CHE-2001611, the NSF 884 Center for Sustainable Nanotechnology (
 License
 ----------------
 
-NestedAE code and databases are distributed under terms of the [MIT License](https://github.com/rxhernandez/MultiScaleDPD/blob/main/LICENSE).
+MultiScaleDPD code and databases are distributed under terms of the [MIT License](https://github.com/rxhernandez/MultiScaleDPD/blob/main/LICENSE).
