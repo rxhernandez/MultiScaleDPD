@@ -10,7 +10,7 @@ Documentation
 
 Process of building a DPD protein to run in LAMMPS:
 1. build a MARTINI model of your protein using 
-CHARMM-gui(https://www.charmm-gui.org/?doc=input/martini.solution) with martini22 force field. You need two files from the result, charmm-gui-xxxxxxxxx/gromacs/step3_charmm2gmx.pdb is the structure file, and charmm-gui-xxxxxxxxx/gromacs/PROA_P.itp is the MARTINI force field file.
+CHARMM-gui (https://www.charmm-gui.org/?doc=input/martini.solution) with martini22 force field. You need two files from the result, charmm-gui-xxxxxxxxx/gromacs/step3_charmm2gmx.pdb is the structure file, and charmm-gui-xxxxxxxxx/gromacs/PROA_P.itp is the MARTINI force field file.
 2. Put these two files under the same dir as lib.py and convert.py
 3. Open convert.py and step3_charmm2gmx.pdb with a text editor. Modify the line numbers in 
 convert.py according to the lines in step3_charmm2gmx.pdb
@@ -34,8 +34,9 @@ Contributors can be found [here](https://github.com/rxhernandez/MultiScaleDPD/gr
 
 Citing
 ----------------
-Please cite:
-##pending: Wang, Y; Hernandez R.; _ACS Omega_ **XX**, XXXX (2024). [https://doi.org/10.1021/acsomega.4c01868]
+If you use database or codes, please cite the paper:
+
+> Wang, Y; Hernandez R.; _ACS Omega_ **9**, 17667 (2024). [https://doi.org/10.1021/acsomega.4c01868]
 
 Acknowledgment
 ----------------
