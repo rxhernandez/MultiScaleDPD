@@ -2,6 +2,12 @@
 
 This repository contains the source code accompanying the paper: "[Construction of Multiscale Dissipative Particle Dynamics (DPD) Models from Other Coarse-Grained Models](https://pubs.acs.org/doi/full/10.1021/acsomega.4c01868)".
 
+[//]: # add another paper later
+
+
+## Overview
+
+MultiScaleDPD facilitates the construction of multiscale DPD models derived from existing coarse-grained models, enabling simulations in LAMMPS.
 
 <hr>
 
