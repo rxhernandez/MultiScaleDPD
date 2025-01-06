@@ -2,12 +2,26 @@
 
 This repository contains the source code accompanying the paper: "[Construction of Multiscale Dissipative Particle Dynamics (DPD) Models from Other Coarse-Grained Models](https://pubs.acs.org/doi/full/10.1021/acsomega.4c01868)".
 
-[//]: # add another paper later
+And the (PENDING) paper: "Coarse-Grained Dissipative Particle Dynamics (DPD) Simulation of Cytochrome \textit{c} Facilitated Binding Between Lipid Bilayers and Citrate-Coated Gold Nanoparticles"
 
 
 ## Overview
 
 MultiScaleDPD facilitates the construction of multiscale DPD models derived from existing coarse-grained models, enabling simulations in LAMMPS.
+
+## Features
+
+- **Model Conversion**: Transform MARTINI models into DPD-compatible formats.
+- **LAMMPS Integration**: Generate input files for seamless execution in LAMMPS.
+- **Customization**: Support for advanced configurations, including the incorporation of additional molecular components like heme groups.
+
+## Getting Started
+
+### Prerequisites
+
+- **Software**:
+	- [CHARMM-GUI](www.charmm-gui.org)
+	- [LAMMPS](https://github.com/lammps/lammps)
 
 <hr>
 
