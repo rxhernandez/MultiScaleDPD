@@ -1,6 +1,6 @@
 # MultiScaleDPD
 
-This is the source code for paper "Construction of Multiscale Dissipative Particle Dynamics (DPD) Models from Other Coarse-Grained Models".
+This repository contains the source code accompanying the paper: "[Construction of Multiscale Dissipative Particle Dynamics (DPD) Models from Other Coarse-Grained Models](https://pubs.acs.org/doi/full/10.1021/acsomega.4c01868)".
 
 
 <hr>
@@ -26,7 +26,7 @@ then run production.
 Authors
 ----------------
 
-The MultiScaleDPD codes and databaess were developed by 
+The MultiScaleDPD codes and databaess were developed by Yinhan Wang
 
 Contributors can be found [here](https://github.com/rxhernandez/MultiScaleDPD/graphs/contributors).
 
