@@ -90,19 +90,19 @@ To use the improved `pair_dpd.cpp` file, you need to build LAMMPS with the appro
 	- Refer to `example2` for incorporating additional components, such as heme groups.
 	- Ensure LAMMPS includes bug fixes up to July 2022.
 
-### Citation
+## Citation
 
 If you utilize this codebase or database, please cite:
 
 > Wang, Y; Hernandez R.; _ACS Omega_ **9**, 17667 (2024). [https://doi.org/10.1021/acsomega.4c01868]
 
 
-### Acknowledgment
+## Acknowledgment
 
 This work was supported by 
 the National Science Foundation
 under Grant No. CHE-2001611, the NSF 884 Center for Sustainable Nanotechnology (CSN). The CSN is 885 part of the Centers for Chemical Innovation Program. 
 
-### License
+## License
 
 MultiScaleDPD code and databases are distributed under terms of the [MIT License](https://github.com/rxhernandez/MultiScaleDPD/blob/main/LICENSE).
