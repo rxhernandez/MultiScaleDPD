@@ -22,6 +22,16 @@ MultiScaleDPD facilitates the construction of multiscale DPD models derived from
 - **Software**:
 	- [CHARMM-GUI](www.charmm-gui.org)
 	- [LAMMPS](https://github.com/lammps/lammps)
+	- NumPy
+
+### Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/rxhernandez/MultiScaleDPD.git
+   ```
+
+
 
 <hr>
 
