@@ -14,6 +14,7 @@ MultiScaleDPD facilitates the construction of multiscale DPD models derived from
 - **Model Conversion**: Transform MARTINI models into DPD-compatible formats.
 - **LAMMPS Integration**: Generate input files for seamless execution in LAMMPS.
 - **Customization**: Support for advanced configurations, including the incorporation of additional molecular components like heme groups.
+- **Improved DPD Interactions**: Incorporates enhanced pair interaction potentials for DPD simulations using `pair_dpd.cpp`.
 
 ## Getting Started
 
@@ -39,6 +40,28 @@ MultiScaleDPD facilitates the construction of multiscale DPD models derived from
    ```bash
    pip install numpy
    ```
+
+### Building LAMMPS
+
+To use the improved `pair_dpd.cpp` file, you need to build LAMMPS with the appropriate modifications:
+
+1. **Obtain LAMMPS Source Code**:
+	- Clone the LAMMPS repository:
+   ```bash
+   git clone https://github.com/lammps/lammps.git
+   cd lammps
+   ```
+
+2. **Replace `pair_dpd.cpp`**:
+	- Copy the provided `pair_dpd.cpp` file into the `src/DPD-BASIC` directory of the LAMMPS source code:
+   ```bash
+   cp /path/to/MultiScaleDPD/pair_dpd.cpp src/DPD-BASIC/
+   ```
+
+3. **Build LAMMPS**:
+	- Follow the official instructions to compile LAMMPS with your desired settings:
+	[Build LAMMPS](https://docs.lammps.org/Build.html)
+
 ### Usage
 
 1. **Build a MARTINI Model**:
