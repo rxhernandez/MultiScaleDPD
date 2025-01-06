@@ -2,7 +2,7 @@
 
 This repository contains the source code accompanying the paper: "[Construction of Multiscale Dissipative Particle Dynamics (DPD) Models from Other Coarse-Grained Models](https://pubs.acs.org/doi/full/10.1021/acsomega.4c01868)".
 
-And the (PENDING) paper: "Coarse-Grained Dissipative Particle Dynamics (DPD) Simulation of Cytochrome \textit{c} Facilitated Binding Between Lipid Bilayers and Citrate-Coated Gold Nanoparticles"
+And the (PENDING) paper: "Coarse-Grained Dissipative Particle Dynamics (DPD) Simulation of Cytochrome c Facilitated Binding Between Lipid Bilayers and Citrate-Coated Gold Nanoparticles"
 
 
 ## Overview
